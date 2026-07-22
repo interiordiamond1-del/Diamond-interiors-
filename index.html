@@ -15,6 +15,13 @@
 
   <link rel="canonical" href="https://diamondinteriordesigner.in/" />
   <link rel="alternate" hreflang="en-IN" href="https://diamondinteriordesigner.in/" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+  <!-- Geo tags help Google map this page to Mumbai/Thane/Navi Mumbai local searches -->
+  <meta name="geo.region" content="IN-MH" />
+  <meta name="geo.placename" content="Mumbai, Thane, Navi Mumbai" />
+  <meta name="geo.position" content="19.0760;72.8777" />
+  <meta name="ICBM" content="19.0760, 72.8777" />
 
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_IN" />
@@ -77,12 +84,97 @@
     "paymentAccepted": "Cash, Bank Transfer, UPI",
     "description": "Diamond Interiors is a premium interior design studio in Mumbai offering luxury modular kitchens, bedroom interiors, wardrobes, false ceilings, flooring, TV units, pooja units, hotel interiors and complete turnkey projects across Mumbai, Thane and Navi Mumbai.",
     "foundingDate": "2009",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mumbai",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "19.0760",
+      "longitude": "72.8777"
+    },
+    "hasMap": "https://share.google/Hlmxe9SlQ8lC2yt4R",
+    "areaServed": [
+      {"@type": "City", "name": "Mumbai"},
+      {"@type": "City", "name": "Thane"},
+      {"@type": "City", "name": "Navi Mumbai"},
+      {"@type": "AdministrativeArea", "name": "Maharashtra"}
+    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "10:00",
+      "closes": "20:00"
+    },
+    "makesOffer": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Modular Kitchen Design"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bedroom Interior Design"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Wardrobe & Storage Design"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "False Ceiling Design"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Flooring Solutions"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "TV Unit Design"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pooja Unit Design"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Turnkey Interior Projects"}}
+    ],
     "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "bestRating": "5", "worstRating": "1", "ratingCount": "500"},
+    "sameAs": [
+      "https://wa.me/919152838906",
+      "https://www.facebook.com/share/1bgrwLy88s/",
+      "https://www.instagram.com/diamond_interior1",
+      "https://share.google/Hlmxe9SlQ8lC2yt4R"
+    ]
+  }
+  </script>
+
+  <!-- Organization schema — separate from LocalBusiness, helps Google show your logo in Knowledge Panel / search results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Diamond Interiors",
+    "url": "https://diamondinteriordesigner.in/",
+    "logo": "https://diamondinteriordesigner.in/favicon-logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-9152838906",
+      "contactType": "customer service",
+      "areaServed": "IN",
+      "availableLanguage": ["English", "Hindi", "Marathi"]
+    },
     "sameAs": [
       "https://wa.me/919152838906",
       "https://www.facebook.com/share/1bgrwLy88s/",
       "https://www.instagram.com/diamond_interior1"
     ]
+  }
+  </script>
+
+  <!-- Breadcrumb schema — helps Google show rich breadcrumb trail in search results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://diamondinteriordesigner.in/"},
+      {"@type": "ListItem", "position": 2, "name": "Interior Design Services", "item": "https://diamondinteriordesigner.in/#services"},
+      {"@type": "ListItem", "position": 3, "name": "Project Gallery", "item": "https://diamondinteriordesigner.in/#gallery"},
+      {"@type": "ListItem", "position": 4, "name": "Contact", "item": "https://diamondinteriordesigner.in/#contact"}
+    ]
+  }
+  </script>
+
+  <!-- Speakable schema — helps voice assistants (Google Assistant) read out FAQ answers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".hero-sub", ".faq-a"]
+    },
+    "url": "https://diamondinteriordesigner.in/"
   }
   </script>
 
